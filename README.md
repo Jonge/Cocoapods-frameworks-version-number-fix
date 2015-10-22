@@ -2,6 +2,8 @@
 
 This script changes all Cocoapods frameworks' version numbers to match the app's plist, which is required as of 21 Oct 2015.
 
+Thanks to [@orta](https://github.com/orta) for the initial idea!
+
 ## Install
 
 1) Add this script at the end of your Podfile.
