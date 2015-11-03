@@ -2,6 +2,10 @@
 
 This script changes all Cocoapods frameworks' version numbers to match the app's plist, which is required as of 21 Oct 2015.
 
+It fixes the following error:
+
+    ERROR ITMS-90062 "This bundle is invalid. The value for key CFBundleShortVersionString in the Info.plist file must contain a higher version than that of the previously approved version".  
+
 Thanks to [@orta](https://github.com/orta) for the initial idea!
 
 ## Install
