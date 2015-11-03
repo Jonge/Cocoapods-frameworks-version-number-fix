@@ -12,8 +12,7 @@ Thanks to [@orta](https://github.com/orta) for the initial idea!
         app_plist = "MyApp/Info.plist"
         plist_buddy = "/usr/libexec/PlistBuddy"
         
-        version = `#{plist_buddy} -c "Print CFBundleShortVersionString" #{app_plist}`
-        version = `echo "#{version}" | tr -d '\n'`
+        version = `#{plist_buddy} -c "Print CFBundleShortVersionString" "#{app_plist}"`.strip
         
         puts "Updating CocoaPods frameworks' version numbers to #{version}"
       
